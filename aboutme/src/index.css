@@ -1,0 +1,200 @@
+body {
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-image:url(../public/media/.trashed-1762436235-Picsart_25-10-07_19-05-26-176.jpg);
+  background-size:cover; */
+  background-color:rgb(58, 58, 58);
+ 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.navimg{
+  width: 3rem;
+  border-radius: 100%;
+}
+.hero{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 4%;
+}
+.hero img{
+  width: 20%;
+  border-radius: 100%;
+  margin-bottom: 2%;
+  box-shadow:4px 4px 20px rgb(0, 0, 0);
+  transition: all 0.2s ease-in 0s;
+  animation-name:cards;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.hero img:hover{
+   box-shadow: 2px 2px 10px rgb(115, 115, 115);
+}
+.content{
+  padding-top:5rem;
+  padding-left:2rem;
+  padding-right:2rem;
+}
+.navbar{
+  position:sticky;
+  width: 100%;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+.heading{
+  display:none;
+}
+
+.nav-item{
+  margin: 0rem 0.3rem 0rem 1rem;
+  text-decoration: none;
+  transition: all 0.15s ease 0s;
+}
+.nav-item:hover{
+  color: red;
+}
+.nav-link:hover{
+  color: #50cdfe;
+}
+.card-img{
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow:5px 5px 1 black;
+  transition:all 0.2s ease 0s;
+  animation-name:cards;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.options{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin-top:5%;
+ 
+}
+.connectHome{
+  margin-left:13%;
+}
+.box{
+  box-shadow: 2px 2px 12px rgb(6, 6, 6);
+  border-radius:1rem;
+  background-color:hsl(197, 92%, 80%);
+  padding: 1rem 1rem 1rem 2rem;
+  width: 50%;
+  margin: auto;
+}
+.connectLink{
+  padding: 10rem 2rem 0rem 2rem;
+}
+@media(max-width:800px){
+.options{
+  display:flex;
+  flex-direction:column; 
+}
+.card{
+  
+  margin-bottom: 8%;
+  display:flex;
+  align-items: center;
+}
+.connectHome{
+  margin:0px;
+}
+.hero img{
+  margin-top:10%;
+  width: 30%;
+}
+.connectLink{
+  padding-top: 3rem;
+}
+.content{
+  padding-top:2rem;
+}
+.box{
+  margin:none;
+  width: 100%;
+  margin-bottom: 10%;
+}
+.heading{
+  display: contents;
+}
+}
+
+@keyframes cards{
+  0%{
+  box-shadow:5px  5px 10px  rgb(52, 52, 52);
+  }
+  50%{
+  box-shadow:2px  2px 10px  #50cdfe;
+  
+  }
+  100%{
+  box-shadow:5px 5px  10px rgb(53, 53, 53);
+  }
+}
+.card{
+  background-color:transparent;
+  border: none;
+}
+
+.icon{
+  margin-left:30%;
+}
+
+.card-img:hover{
+transform: scale(1.06,1.06);
+}
+.cardlink{
+  width: 160px;
+}
+.connect i{
+  font-size: 5rem;
+  margin: 1rem;
+  color: rgb(129, 129, 129);
+}
+a{
+  text-decoration: none;
+  color: gray;
+}
+.dropdown{
+  padding: 2rem 2rem 0 2rem;
+  color: #58cffeab;
+}
+.dropdown a:hover{
+  color: #9ddef8;
+}
+#insta:hover{
+  color: rgb(255, 61, 190);
+}
+.connect i:hover{
+  color: rgb(108, 157, 230);
+}
+#gmail:hover{
+  color: rgb(228, 1, 1);
+}
+.homeLink{
+  margin-left: 90%;
+  color: white;
+}
+.homeLink:hover{
+  color: #272727;
+}
+.connectHome{
+  color: white;
+}
+.connectHome:hover{
+  color: #50cdfe;
+}
+#gmailId{
+  color: rgb(129, 129, 129);
+}
